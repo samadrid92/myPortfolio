@@ -1,20 +1,32 @@
-* {
-  box-sizing: border-box;
+.wrapper {
+  width: 100%;
+  height: 100%;
 }
 
-.wrapper {
-  background: grey;
-  width: 100vw;
-  height: 100vh;
+header {
+  border: 1px solid green;
 }
 
 /*******NAV BAR********/
-
-nav {
+.nav {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
 }
-nav img {
-  height: 40px;
-  width: 40px;
-  margin: auto;
+
+.logo {
+  text-align: center;
+  border: 1px solid red;
+  height: 70px;
+  flex-grow: 6;
+}
+
+.nav li {
+  display: block;
+  font-size: 2em;
+  border: 1px solid blue;
+  flex-grow: 1;
+  text-align: center;
+
 }
