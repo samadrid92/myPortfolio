@@ -13,20 +13,34 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0;
+  -webkit-padding-start: 0px;
+  list-style: none;
 }
 
-.logo {
-  text-align: center;
-  border: 1px solid red;
-  height: 70px;
-  flex-grow: 6;
-}
-
-.nav li {
+.my-logo,
+.nav a {
   display: block;
   font-size: 2em;
+  text-align: center;
+  padding: 40px;
+  text-decoration: none;
+}
+.my-logo {
+  border: 1px solid red;
+}
+
+.nav a {
   border: 1px solid blue;
   flex-grow: 1;
-  text-align: center;
+}
 
+/*******MOBILE PORTRAIT HOME********/
+section {
+  border: 1px solid red;
+  text-align: center;
+  margin: 40% 20%;
+}
+
+h1 {
+  font-size: 6em;
 }
