@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background: grey;
+  width: 100vw;
+  height: 100vh;
+}
+
+/*******NAV BAR********/
+
+nav {
+  display: flex;
+}
+nav img {
+  height: 40px;
+  width: 40px;
+  margin: auto;
+}
