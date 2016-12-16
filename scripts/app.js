@@ -15,8 +15,8 @@ if ($('a.my-logo').attr('href') === currentHref){
 function playDescriptions(){
   var i = 0;
   var $homeDiv = $("#me-div");
-  var descriptions = ["Web Developer","Web Designer","L.A. Rams Fan","L.A. Dodgers Fan","L.A. Kings Fan",
-                      "L.A. Lakers Fan", "1st Gen American", "Foodie", "Dog Lover", "Wanderlust"];
+  var descriptions = ["Web Developer", "Web Designer", "Dog Lover", "Ikea Master-Builder", "L.A. Dodgers Fan", "Foodie", "Undefeated Boxer",
+                      "CIF Champ", "Happy Drunk", "L.A. Kings Fan", "World Traveler", "L.A. Rams Fan", "L.A. Lakers Fan", "1st Gen American"];
   setInterval(function(){
     $homeDiv.empty();
     if (i >= descriptions.length ){
@@ -28,7 +28,7 @@ function playDescriptions(){
       break;
     }
     i++;
-  }, 700);
+  }, 650);
 }
 
 
