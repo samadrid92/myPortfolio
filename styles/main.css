@@ -6,7 +6,6 @@
 header {
   border: 1px solid green;
 }
-
 /*******NAV BAR********/
 .nav {
   display: flex;
@@ -33,9 +32,8 @@ header {
   border: 1px solid blue;
   flex-grow: 1;
 }
-
 /*******MOBILE PORTRAIT HOME********/
-section {
+section.index-content{
   border: 1px solid red;
   text-align: center;
   margin: 40% 20%;
@@ -48,4 +46,26 @@ h1 {
 hr {
   height: 3px;
   background-color: black;
+}
+/*******MOBILE PORTRAIT ABOUT********/
+section.about-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.bio h2{
+  font-size: 4em;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.bio, .me-photo {
+  border: 1px solid red;
+  height: 100%;
+}
+.bio p{
+  margin: 30px 120px 60px;
+  font-size: 3em;
+  line-height: 1.8;
+  text-align: left;
+  border: 1px solid blue;
 }
