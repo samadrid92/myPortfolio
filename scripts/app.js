@@ -1,22 +1,25 @@
-console.log("App.js Working");
-var windowHref;
-var currentArray;
-var currentHref;
-//gets current href of user
-windowHref = window.location.href;
-currentArray = windowHref.split("/")
-currentHref = currentArray[currentArray.length-1];
-
 //statement that will run function only on index.html
-if ($('a.my-logo').attr('href') === currentHref){
-  // playDescriptions();
+if ($('a.my-logo').attr('href') === getCurrentHref()){
+  playDescriptions();
+}
+
+function getCurrentHref (){
+  var windowHref;
+  var currentArray;
+  var currentHref;
+  //gets current href of user
+  windowHref = window.location.href;
+  currentArray = windowHref.split("/")
+  currentHref = currentArray[currentArray.length-1];
+  return currentHref;
 }
 
 function playDescriptions(){
   var i = 0;
   var $homeDiv = $("#me-div");
-  var descriptions = ["Web Developer","Web Designer","L.A. Rams Fan","L.A. Dodgers Fan","L.A. Kings Fan",
-                      "L.A. Lakers Fan", "1st Gen American", "Foodie", "Dog Lover", "Wanderlust"];
+  var descriptions = ["Web Developer", "Web Designer", "Dog Lover", "Ikea Master-Builder", "L.A. Dodgers Fan", "Foodie", "Undefeated Boxer", "Brunch Enthusiast",
+                      "CIF Champ", "Happy Drunk", "L.A. Kings Fan", "World Traveler", "L.A. Rams Fan", "L.A. Lakers Fan", "1st Gen American", "Real Madrid Fan"];
+  $homeDiv.empty();
   setInterval(function(){
     $homeDiv.empty();
     if (i >= descriptions.length ){
@@ -28,22 +31,11 @@ function playDescriptions(){
       break;
     }
     i++;
-  }, 700);
+  }, 570);
 }
 
-
-
-//gets current href of user
-var windowHref = window.location.href;
-var currentArray = windowHref.split("/")
-var currentHref = currentArray[currentArray.length-1];
-console.log(currentHref);
-
-
-
-//statement that will run function only on index.html
-function playQualities() {
-  if ($('a.my-logo').attr('href') === currentHref){
-    alert("It's running on index.html!");
-  }
-}
+console.log($(document).height());
+console.log($(window).height());
+console.log($("header").height());
+console.log($(".about-content").height());
+console.log($(".me-photo").height());
