@@ -69,3 +69,48 @@ section.about-content{
   text-align: left;
   border: 1px solid blue;
 }
+/*******MOBILE PORTRAIT CONTACT********/
+.contact-content{
+  display: flex;
+  flex-direction: column;
+}
+.contact-info, .contact-links{
+  border: 1px solid red;
+}
+
+.contact-info h2{
+  text-align: center;
+  font-size: 4em;
+}
+
+.contact-info ol{
+  margin: 30px 120px 60px;
+  font-size: 3.5em;
+  line-height: 2;
+  border: 1px solid blue;
+  list-style: none;
+  font-weight: bold;
+}
+
+.contact-info ol span{
+  color: rgb(56, 226, 164);
+  font-weight: normal;
+}
+
+.links{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.links a{
+  display: block;
+  font-size: 3em;
+  text-align: center;
+  padding: 40px;
+  flex-grow: 1;
+  border: 1px solid green;
+  margin: 0;
+  /*text-decoration: none;*/
+}
