@@ -3,6 +3,8 @@ if ($('a.my-logo').attr('href') === getCurrentHref()){
   playDescriptions();
 }
 
+console.log(getCurrentHref());
+
 function getCurrentHref (){
   var windowHref;
   var currentArray;
@@ -35,7 +37,10 @@ function playDescriptions(){
 }
 
 console.log($(document).height());
-console.log($(window).height());
+//window and header always constant
+console.log("Windows Height: " + $(window).height());
+console.log("Windows Width: " + $(window).width());
 console.log($("header").height());
+console.log($("header").width());
 console.log($(".about-content").height());
 console.log($(".me-photo").height());
