@@ -42,5 +42,4 @@ console.log("Windows Height: " + $(window).height());
 console.log("Windows Width: " + $(window).width());
 console.log($("header").height());
 console.log($("header").width());
-console.log($(".about-content").height());
-console.log($(".me-photo").height());
+console.log($(".nomad").width());

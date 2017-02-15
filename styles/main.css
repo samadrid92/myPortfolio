@@ -6,11 +6,16 @@
 .hidden{
   display: none;
 }
+
+picture{
+  margin: 0;
+}
 header {
   border: 1px solid green;
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 9999;
 }
 /*******NAV BAR********/
 .nav {
@@ -37,6 +42,10 @@ header {
 .nav a {
   border: 1px solid blue;
   flex-grow: 1;
+}
+
+.nav a:hover {
+  background-color: pink;
 }
 /*******MOBILE PORTRAIT HOME********/
 section.index-content{
@@ -141,3 +150,61 @@ figure{
 }
 
 /*******MOBILE PORTRAIT WORK********/
+section.work-content{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 19%;
+  width: 100%;
+  border: 1px solid red;
+  text-align: center;
+}
+
+.nomad,
+.heeanswers{
+  border: 5px solid purple;
+  position: relative;
+}
+
+.nomad-overlay,
+.heeanswers-overlay{
+  border: 5px solid red;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 980px;
+  height: 530px;
+  transition: .8s;
+}
+
+.nomad-overlay:hover,
+.heeanswers-overlay:hover{
+  background-color: grey;
+}
+
+.nomad-overlay:hover .case-study-link,
+.nomad-overlay:hover .work-title,
+.heeanswers-overlay:hover .case-study-link,
+.heeanswers-overlay:hover .work-title
+{
+  -webkit-transform: scale(1.1);
+  transition-duration: .5s;
+}
+
+.case-study-link {
+  color: white;
+  display: inline-block;
+  background-color: green;
+  text-decoration: none;
+  padding: 20px;
+  position: absolute;
+  top: 300px;
+  left: 250px;
+  border-radius: 50px;
+}
+
+.work-title{
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+}
